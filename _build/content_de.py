@@ -34,7 +34,7 @@ L = {
         "about": {"title": "Über mich · Burak Arkan, Soziotherapeut in Gelsenkirchen",
                   "desc": "Burak Arkan, M. Sc. Psychologe und Soziotherapeut in Gelsenkirchen. Haltung, Arbeitsweise und Qualifikation."},
         "contact": {"title": "Kontakt · Praxis für Soziotherapie Burak Arkan",
-                    "desc": "Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen. Telefon 0209 359 765 97."},
+                    "desc": "Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen. Telefon 0163 670 7918."},
         "imprint": {"title": "Impressum · Praxis Arkan", "desc": "Impressum der Praxis für Soziotherapie Burak Arkan, Gelsenkirchen."},
         "privacy": {"title": "Datenschutz · Praxis Arkan", "desc": "Datenschutzerklärung der Praxis für Soziotherapie Burak Arkan."},
     },
@@ -262,9 +262,7 @@ L = {
         "h1": "Melden Sie sich – <em>auch wenn Sie unsicher sind.</em>",
         "lead": "Ob Sie selbst betroffen sind, Angehörige:r oder aus einer Praxis anrufen: Ich nehme mir Zeit für Ihre Fragen.",
         "phone_hint": "Bei Abwesenheit rufe ich zurück.",
-        "mail_hint": "Bitte keine ausführlichen Gesundheitsdaten per E-Mail.",
         "hours": "Nach Vereinbarung",
-        "hours_hint": TODO.format("Telefonzeiten ergänzen, z.&nbsp;B. Mo–Fr 9–12 Uhr"),
         "first_h": "Was Sie zum ersten Gespräch mitbringen",
         "first": [
             "Ihre Versichertenkarte und – falls schon vorhanden – die Verordnung. Wenn Sie mögen, auch aktuelle Arztbriefe. Alles andere klären wir gemeinsam.",
@@ -284,7 +282,7 @@ L = {
 <h2>Angaben gemäß § 5 DDG</h2>
 <p>Burak Arkan<br>Praxis für Soziotherapie<br>Albertstraße 54<br>45894 Gelsenkirchen</p>
 <h2>Kontakt</h2>
-<p>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>Mobil: <a href="tel:+491636707918">0163 670 7918</a><br>E-Mail: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Mobil: <a href="tel:+491636707918">0163 670 7918</a><br>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>E-Mail: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
 <p>Berufsbezeichnung: Soziotherapeut; akademischer Grad: Master of Science (M.&nbsp;Sc.) Psychologie, verliehen in {TODO.format("Staat ergänzen")}.</p>
 <p>Leistungserbringung nach § 37a SGB V auf Grundlage eines Vertrags mit den gesetzlichen Krankenkassen gemäß § 132b SGB V. {TODO.format("Vertragspartner/Landesverband ergänzen")}</p>
@@ -305,7 +303,7 @@ L = {
         "html": f"""
 <p>Der Schutz Ihrer Daten ist mir – gerade in einem therapeutischen Umfeld – besonders wichtig. Diese Website ist bewusst sparsam gebaut: Sie setzt keine Cookies, verwendet keine Analyse- oder Tracking-Dienste, lädt keine Inhalte von Drittanbietern (Schriften werden lokal ausgeliefert) und enthält kein Kontaktformular.</p>
 <h2>1. Verantwortlicher</h2>
-<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen<br>Telefon 0209 359 765 97 · E-Mail <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen<br>Telefon 0163 670 7918 · E-Mail <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Bereitstellung der Website und Server-Logfiles</h2>
 <p>Diese Website wird bei Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA, gehostet. Beim Aufruf der Website verarbeitet Vercel technisch notwendige Daten (IP-Adresse, daraus abgeleiteter ungefährer Standort, Datum und Uhrzeit, aufgerufene Seite, Browser- und Systeminformationen). Dies ist erforderlich, um die Website sicher und zuverlässig auszuliefern (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO). Die Daten werden nur so lange gespeichert, wie es für diesen Zweck nötig ist.</p>
 <p>Vercel verarbeitet die Daten in meinem Auftrag auf Grundlage eines Vertrags zur Auftragsverarbeitung (Art.&nbsp;28 DSGVO). Dabei kann eine Übermittlung in die USA stattfinden. Vercel ist unter dem EU-US Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission (Art.&nbsp;45 DSGVO). Weitere Informationen: <a href="https://vercel.com/legal/privacy-policy" rel="noopener" target="_blank">vercel.com/legal/privacy-policy</a>.</p>

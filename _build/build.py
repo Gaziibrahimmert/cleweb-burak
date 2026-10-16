@@ -22,10 +22,11 @@ PRACTICE = {
     "street": "Albertstraße 54",
     "zip": "45894",
     "city": "Gelsenkirchen",
-    "phone": "0209 359 765 97",
-    "phone_href": "+4920935976597",
-    "mobile": "0163 670 7918",
-    "mobile_href": "+491636707918",
+    # primary number (mobile) first, landline second
+    "phone": "0163 670 7918",
+    "phone_href": "+491636707918",
+    "landline": "0209 359 765 97",
+    "landline_href": "+4920935976597",
     "email": "arkanburak@gmail.com",
     "maps": "https://www.openstreetmap.org/search?query=Albertstra%C3%9Fe%2054%2C%2045894%20Gelsenkirchen",
 }
@@ -167,7 +168,7 @@ def footer(L, key):
         <p class="foot-h">{ui['foot_contact']}</p>
         <ul class="foot-list">
           <li><a href="tel:{PRACTICE['phone_href']}">{PRACTICE['phone']}</a></li>
-          <li><a href="tel:{PRACTICE['mobile_href']}">{PRACTICE['mobile']}</a></li>
+          <li><a href="tel:{PRACTICE['landline_href']}">{PRACTICE['landline']}</a></li>
           <li><a href="mailto:{PRACTICE['email']}">{PRACTICE['email']}</a></li>
         </ul>
       </div>
@@ -426,11 +427,11 @@ def page_contact(L):
   <div class="wrap contact-grid">
     <div class="reveal">
       <ul class="contact-list">
-        <li><span class="k">{ui['phone_label']}</span><span class="v"><a href="tel:{P['phone_href']}">{P['phone']}</a><small>{t['phone_hint']}</small></span></li>
-        <li><span class="k">{ui['mobile_label']}</span><span class="v"><a href="tel:{P['mobile_href']}">{P['mobile']}</a></span></li>
-        <li><span class="k">{ui['email_label']}</span><span class="v"><a href="mailto:{P['email']}">{P['email']}</a><small>{t['mail_hint']}</small></span></li>
+        <li><span class="k">{ui['mobile_label']}</span><span class="v"><a href="tel:{P['phone_href']}">{P['phone']}</a><small>{t['phone_hint']}</small></span></li>
+        <li><span class="k">{ui['phone_label']}</span><span class="v"><a href="tel:{P['landline_href']}">{P['landline']}</a></span></li>
+        <li><span class="k">{ui['email_label']}</span><span class="v"><a href="mailto:{P['email']}">{P['email']}</a></span></li>
         <li><span class="k">{ui['address_label']}</span><span class="v">{P['street']}<br>{P['zip']} {P['city']}<small><a href="{P['maps']}" target="_blank" rel="noopener">{ui['map_link']} ↗</a></small></span></li>
-        <li><span class="k">{ui['hours_label']}</span><span class="v">{t['hours']}<small>{t['hours_hint']}</small></span></li>
+        <li><span class="k">{ui['hours_label']}</span><span class="v">{t['hours']}</span></li>
       </ul>
     </div>
     <div class="reveal">

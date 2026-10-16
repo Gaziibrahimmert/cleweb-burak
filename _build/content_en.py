@@ -34,7 +34,7 @@ L = {
         "about": {"title": "About · Burak Arkan, sociotherapist in Gelsenkirchen",
                   "desc": "Burak Arkan, M. Sc. psychologist and sociotherapist in Gelsenkirchen. Approach, way of working and qualifications."},
         "contact": {"title": "Contact · Burak Arkan, Practice for Sociotherapy",
-                    "desc": "Practice for Sociotherapy, Albertstraße 54, 45894 Gelsenkirchen, Germany. Phone +49 209 359 765 97."},
+                    "desc": "Practice for Sociotherapy, Albertstraße 54, 45894 Gelsenkirchen, Germany. Phone +49 163 670 7918."},
         "imprint": {"title": "Legal notice · Praxis Arkan", "desc": "Legal notice of the Practice for Sociotherapy Burak Arkan."},
         "privacy": {"title": "Privacy · Praxis Arkan", "desc": "Privacy notice of the Practice for Sociotherapy Burak Arkan."},
     },
@@ -256,10 +256,8 @@ L = {
         "eyebrow": "Contact",
         "h1": "Get in touch – <em>even if you're unsure.</em>",
         "lead": "Whether you are affected yourself, a relative or calling from a practice: I take time for your questions.",
-        "phone_hint": "From abroad: +49 209 359 765 97. I'll call back if I miss you.",
-        "mail_hint": "Please don't send detailed health information by email.",
+        "phone_hint": "From abroad: +49 163 670 7918. I'll call back if I miss you.",
         "hours": "By appointment",
-        "hours_hint": TODO.format("Add phone hours, e.g. Mon–Fri 9–12"),
         "first_h": "What to bring to the first meeting",
         "first": [
             "Your health insurance card and – if you already have it – the prescription. Recent doctor's letters if you like. Everything else we'll sort out together.",
@@ -279,7 +277,7 @@ L = {
 <h2>Information pursuant to § 5 DDG</h2>
 <p>Burak Arkan<br>Praxis für Soziotherapie<br>Albertstraße 54<br>45894 Gelsenkirchen, Germany</p>
 <h2>Contact</h2>
-<p>Phone: <a href="tel:+4920935976597">+49 209 359 765 97</a><br>Mobile: <a href="tel:+491636707918">+49 163 670 7918</a><br>Email: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Mobile: <a href="tel:+491636707918">+49 163 670 7918</a><br>Phone: <a href="tel:+4920935976597">+49 209 359 765 97</a><br>Email: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Professional title</h2>
 <p>Sociotherapist; academic degree: Master of Science (M.&nbsp;Sc.) in Psychology, awarded in {TODO.format("add country")}.</p>
 <p>Services under § 37a SGB V based on a contract with the statutory health insurers pursuant to § 132b SGB V. {TODO.format("Add contracting party")}</p>
@@ -296,7 +294,7 @@ L = {
 <p class="note">This page is a courtesy translation. The legally binding version is the <a href="../de/datenschutz.html">German Datenschutzerklärung</a>.</p>
 <p>Protecting your data matters to me – especially in a therapeutic setting. This website is deliberately minimal: it sets no cookies, uses no analytics or tracking, loads no third-party content (fonts are served locally) and has no contact form.</p>
 <h2>1. Controller</h2>
-<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen, Germany · Phone +49 209 359 765 97 · Email <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen, Germany · Phone +49 163 670 7918 · Email <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Server log files</h2>
 <p>This site is hosted by Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. When you visit it, Vercel processes technically necessary data (IP address, approximate location derived from it, date and time, page requested, browser and system information). This is required to deliver the site securely and reliably (Art.&nbsp;6(1)(f) GDPR).</p>
 <p>Vercel processes this data on my behalf under a data processing agreement (Art.&nbsp;28 GDPR); data may be transferred to the USA. Vercel is certified under the EU-U.S. Data Privacy Framework, so the transfer is based on the European Commission's adequacy decision (Art.&nbsp;45 GDPR). The domain praxis-arkan.de is registered with IONOS SE, Montabaur, Germany, which only provides name resolution (DNS).</p>

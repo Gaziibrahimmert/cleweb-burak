@@ -34,7 +34,7 @@ L = {
         "about": {"title": "Hakkımda · Burak Arkan, Gelsenkirchen'de sosyoterapist",
                   "desc": "Burak Arkan, psikolog (M. Sc.) ve Gelsenkirchen'de sosyoterapist. Yaklaşım, çalışma biçimi ve nitelikler."},
         "contact": {"title": "İletişim · Burak Arkan Sosyoterapi Muayenehanesi",
-                    "desc": "Sosyoterapi Muayenehanesi, Albertstraße 54, 45894 Gelsenkirchen. Telefon 0209 359 765 97."},
+                    "desc": "Sosyoterapi Muayenehanesi, Albertstraße 54, 45894 Gelsenkirchen. Telefon 0163 670 7918."},
         "imprint": {"title": "Künye · Praxis Arkan", "desc": "Burak Arkan Sosyoterapi Muayenehanesi künyesi."},
         "privacy": {"title": "Gizlilik · Praxis Arkan", "desc": "Burak Arkan Sosyoterapi Muayenehanesi gizlilik bildirimi."},
     },
@@ -257,9 +257,7 @@ L = {
         "h1": "Bana ulaşın – <em>emin olmasanız bile.</em>",
         "lead": "İster kendiniz, ister bir yakınınız için, ister bir muayenehaneden arayın: Sorularınıza zaman ayırırım.",
         "phone_hint": "Ulaşamazsanız sizi geri ararım.",
-        "mail_hint": "Lütfen e-postayla ayrıntılı sağlık bilgisi göndermeyin.",
         "hours": "Randevu ile",
-        "hours_hint": TODO.format("Telefon saatleri eklenecek, örn. Pzt–Cum 9–12"),
         "first_h": "İlk görüşmeye ne getirmelisiniz",
         "first": [
             "Sigorta kartınızı ve – varsa – reçetenizi. İsterseniz güncel doktor raporlarınızı da. Gerisini birlikte hallederiz.",
@@ -279,7 +277,7 @@ L = {
 <h2>§ 5 DDG uyarınca bilgiler</h2>
 <p>Burak Arkan<br>Praxis für Soziotherapie<br>Albertstraße 54<br>45894 Gelsenkirchen, Almanya</p>
 <h2>İletişim</h2>
-<p>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>Cep: <a href="tel:+491636707918">0163 670 7918</a><br>E-posta: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Cep: <a href="tel:+491636707918">0163 670 7918</a><br>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>E-posta: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Meslek unvanı</h2>
 <p>Sosyoterapist; akademik derece: Psikoloji Yüksek Lisansı (M.&nbsp;Sc.), {TODO.format("verildiği ülke eklenecek")}.</p>
 <p>§ 132b SGB V uyarınca yasal sağlık sigortalarıyla yapılan sözleşmeye dayalı olarak § 37a SGB V kapsamında hizmet. {TODO.format("Sözleşme tarafı eklenecek")}</p>
@@ -296,7 +294,7 @@ L = {
 <p class="note">Bu sayfa bilgilendirme amaçlı bir çeviridir. Hukuken bağlayıcı olan <a href="../de/datenschutz.html">Almanca gizlilik bildirimidir (Datenschutzerklärung)</a>.</p>
 <p>Verilerinizin korunması, özellikle terapötik bir ortamda, benim için çok önemlidir. Bu web sitesi bilinçli olarak sade tutulmuştur: Çerez kullanmaz, analiz veya takip hizmeti içermez, üçüncü taraflardan içerik yüklemez (yazı tipleri yerel olarak sunulur) ve iletişim formu yoktur.</p>
 <h2>1. Sorumlu kişi</h2>
-<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen · Telefon 0209 359 765 97 · E-posta <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
+<p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen · Telefon 0163 670 7918 · E-posta <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Sunucu kayıtları</h2>
 <p>Bu site Vercel Inc. (440 N Barranca Avenue #4133, Covina, CA 91723, ABD) tarafından barındırılmaktadır. Siteyi ziyaret ettiğinizde Vercel teknik olarak gerekli verileri (IP adresi, buna dayalı yaklaşık konum, tarih ve saat, açılan sayfa, tarayıcı ve sistem bilgileri) işler. Bu, sitenin güvenli ve sorunsuz sunulması için gereklidir (GDPR/DSGVO md.&nbsp;6/1-f).</p>
 <p>Vercel verileri bir veri işleme sözleşmesi (md.&nbsp;28) kapsamında benim adıma işler; veriler ABD'ye aktarılabilir. Vercel, AB-ABD Veri Gizliliği Çerçevesi (Data Privacy Framework) kapsamında sertifikalıdır. Alan adı praxis-arkan.de, IONOS SE'de (Montabaur) kayıtlıdır; IONOS yalnızca alan adı çözümlemesini (DNS) sağlar.</p>
