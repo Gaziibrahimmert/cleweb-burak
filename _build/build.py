@@ -15,7 +15,7 @@ import content_de, content_tr, content_en  # noqa: E402
 
 LANGS = [content_de.L, content_tr.L, content_en.L]
 BASE = "https://praxis-arkan.de"
-PAGE_KEYS = ["home", "st", "ablauf", "about", "contact", "imprint", "privacy"]
+PAGE_KEYS = ["home", "st", "about", "contact", "imprint", "privacy"]
 
 PRACTICE = {
     "name": "Burak Arkan",
@@ -121,7 +121,7 @@ def header(L, key):
     ui = L["ui"]
     nav = "".join(
         f'<a href="{href(L, k)}"{" aria-current=\"page\"" if k == key else ""}>{L["nav"][k]}</a>'
-        for k in ("st", "ablauf", "about", "contact")
+        for k in ("st", "about", "contact")
     )
     langs = "".join(
         f'<a href="{href(o, key, L)}" hreflang="{o["code"]}" lang="{o["html_lang"]}"'
@@ -148,7 +148,7 @@ def header(L, key):
 
 def footer(L, key):
     ui = L["ui"]
-    pages = "".join(f'<li><a href="{href(L, k)}">{L["nav"][k]}</a></li>' for k in ("st", "ablauf", "about", "contact"))
+    pages = "".join(f'<li><a href="{href(L, k)}">{L["nav"][k]}</a></li>' for k in ("st", "about", "contact"))
     return f"""</main>
 <footer class="site-footer">
   <div class="wrap">
@@ -276,9 +276,6 @@ def page_home(L):
     facts = "".join(
         f'<li><span class="n">{i + 1:02d}</span><div><b>{b}</b><span>{s}</span></div></li>'
         for i, (b, s) in enumerate(t["facts"]))
-    numbers = "".join(
-        f'<div><span class="big">{n}<small>{u}</small></span><p>{d}</p></div>' for n, u, d in t["numbers"])
-    steps = "".join(f"<li><b>{b}</b><span>{s}</span></li>" for b, s in t["steps"])
     return f"""<section class="hero">
   {motif()}
   <div class="wrap hero-grid">
@@ -305,28 +302,6 @@ def page_home(L):
   </div>
 </section>
 
-{split(t['who_h2'], paras(t['who_intro']) + lines(t['who']) + f'<p class="note" style="margin-top:28px">{t["who_note"]}</p>', t['who_eyebrow'])}
-
-<section class="band">
-  {motif("band-motif")}
-  <div class="wrap">
-    <p class="eyebrow reveal">{t['band_eyebrow']}</p>
-    <h2 class="reveal">{t['band_h2']}</h2>
-    <div class="numbers reveal">{numbers}</div>
-    <p class="src">{t['band_src']}</p>
-  </div>
-</section>
-
-<section class="section" style="padding-top:var(--space)">
-  <div class="wrap">
-    <div class="reveal" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px">
-      <div><p class="eyebrow">{t['steps_eyebrow']}</p><h2 style="margin:0;max-width:20ch">{t['steps_h2']}</h2></div>
-      {link_arrow(t['steps_link'], href(L, 'ablauf'))}
-    </div>
-    <ol class="steps-row reveal">{steps}</ol>
-  </div>
-</section>
-
 <section class="section tint">
   <div class="wrap split-even">
     <figure class="figure reveal">
@@ -340,81 +315,52 @@ def page_home(L):
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="panel reveal split" style="gap:clamp(24px,5vw,80px)">
-      <div><p class="eyebrow">{t['docs_eyebrow']}</p><h3 style="font-size:clamp(1.6rem,2.4vw,2.1rem)">{t['docs_h']}</h3></div>
-      <div class="muted">{paras(t['docs'])}<p style="margin-top:20px">{link_arrow(t['docs_link'], href(L, 'ablauf') + '#aerzte')}</p></div>
-    </div>
-  </div>
-</section>
 {cta_end(L)}"""
+
+
+def section_body(s):
+    """Body of one content section: intro paragraphs, optional lead-in, list, closing note."""
+    html = paras(s.get("text", []))
+    if s.get("list_intro"):
+        html += f'<p style="margin-top:28px"><strong>{s["list_intro"]}</strong></p>'
+    if s.get("list"):
+        html += bullets(s["list"], cols=s.get("cols", False))
+    if s.get("after"):
+        html += f'<div style="margin-top:28px">{paras(s["after"])}</div>'
+    if s.get("note"):
+        html += f'<p class="note" style="margin-top:28px">{s["note"]}</p>'
+    return html
 
 
 def page_st(L):
     t = L["st"]
-    return (page_hero(t)
-            + split(t["what_h2"], paras(t["what"]), t["what_eyebrow"])
-            + split(t["goals_h2"], lines(t["goals"]), t["goals_eyebrow"])
-            + split(t["do_h2"], paras(t["do_intro"]) + bullets(t["do"], cols=True), t["do_eyebrow"], cls="section tint")
-            + split(t["req_h2"], paras(t["req"]) + bullets(t["req_list"]) + f'<p class="note" style="margin-top:28px">{t["req_note"]}</p>', t["req_eyebrow"])
-            + split(t["cost_h2"], paras(t["cost"]), t["cost_eyebrow"])
-            + split(t["faq_h2"], faq(t["faq"]), t["faq_eyebrow"], ident="fragen")
-            + cta_end(L))
-
-
-def page_ablauf(L):
-    t = L["ablauf"]
-    steps = "".join(
-        f'<li><div><span class="tag">{tag}</span><h3>{h}</h3>{paras(p if isinstance(p, list) else [p])}</div></li>'
-        for tag, h, p in t["steps"])
-    return (page_hero(t)
-            + f"""<section class="section">
-  <div class="wrap split">
-    <div class="reveal"><p class="eyebrow">{t['steps_eyebrow']}</p><h2>{t['steps_h2']}</h2></div>
-    <ol class="steps reveal">{steps}</ol>
-  </div>
-</section>
-"""
-            + split(t["docs_h2"], paras(t["docs"]) + lines(t["forms"]) + f'<h3 style="margin-top:48px">{t["who_h"]}</h3>' + bullets(t["who"])
-                    + f'<div class="panel" style="margin-top:48px"><h3>{t["coop_h"]}</h3>{paras(t["coop"])}<div class="btn-row" style="margin-top:20px">{btn_call(L)}{btn_mail(L)}</div></div>',
-                    t["docs_eyebrow"], ident="aerzte", cls="section tint")
-            + cta_end(L))
+    out = page_hero(t)
+    for s in t["sections"]:
+        out += split(s["h2"], section_body(s), s.get("eyebrow"), ident=s.get("id"),
+                     cls="section tint" if s.get("tint") else "section")
+    return out + split(t["faq_h2"], faq(t["faq"]), t["faq_eyebrow"], ident="fragen") + cta_end(L)
 
 
 def page_about(L):
     t = L["about"]
-    return (page_hero(t)
-            + f"""<section class="section">
+    services = "".join(f"<li><b>{b}</b><span>{s}</span></li>" for b, s in t["services"])
+    return (f"""<section class="page-hero">
+  {motif()}
   <div class="wrap split-even" style="align-items:start">
     <figure class="figure reveal">
-      <img src="../assets/img/portrait.webp" alt="{t['portrait_alt']}" width="800" height="1000" loading="lazy">
-      <figcaption><span>Burak Arkan</span><span>{L['ui']['job_title']}</span></figcaption>
+      <img src="../assets/img/portrait.webp" alt="{t['portrait_alt']}" width="800" height="1000">
     </figure>
     <div class="reveal">
-      <p class="eyebrow">{t['bio_eyebrow']}</p>
-      <h2>{t['bio_h2']}</h2>
-      <div class="muted">{paras(t['bio'])}</div>
+      <p class="eyebrow">{t['eyebrow']}</p>
+      <h1>Burak Arkan</h1>
+      <p class="small" style="letter-spacing:.04em;margin-bottom:32px">{t['titles']}</p>
+      <div class="muted">{paras(t['intro'])}</div>
     </div>
   </div>
 </section>
 """
-            + split(t["values_h2"], lines(t["values"]), t["values_eyebrow"])
-            + split(t["qual_h2"], lines(t["qual"], single=True), t["qual_eyebrow"], cls="section tint")
-            + f"""<section class="section" style="padding-top:var(--space)">
-  <div class="wrap split-even">
-    <div class="reveal">
-      <p class="eyebrow">{t['place_eyebrow']}</p>
-      <h2>{t['place_h2']}</h2>
-      <div class="muted">{paras(t['place'])}</div>
-    </div>
-    <figure class="figure wide reveal">
-      <img src="../assets/img/praxis.webp" alt="{t['room_alt']}" width="1200" height="800" loading="lazy">
-    </figure>
-  </div>
-</section>
-"""
+            + split(t["work_h2"], paras(t["work"]), t["work_eyebrow"])
+            + split(t["services_h2"], f'<ul class="list-lines">{services}</ul>', t["services_eyebrow"], cls="section tint")
             + cta_end(L))
 
 
@@ -435,15 +381,9 @@ def page_contact(L):
       </ul>
     </div>
     <div class="reveal">
-      <figure class="figure wide" style="margin:0 0 40px">
-        <img src="../assets/img/praxis.webp" alt="{L['about']['room_alt']}" width="1200" height="800" loading="lazy">
+      <figure class="figure wide" style="margin:0">
+        <img src="../assets/img/praxis.webp" alt="{t['room_alt']}" width="1200" height="800" loading="lazy">
       </figure>
-      <h3>{t['first_h']}</h3>
-      <div class="muted">{paras(t['first'])}</div>
-      <div class="panel" style="margin-top:40px">
-        <h3>{t['emergency_h']}</h3>
-        <div class="muted">{paras(t['emergency'])}</div>
-      </div>
     </div>
   </div>
 </section>
@@ -465,7 +405,7 @@ def page_legal(L, key):
 
 
 RENDER = {
-    "home": page_home, "st": page_st, "ablauf": page_ablauf, "about": page_about,
+    "home": page_home, "st": page_st, "about": page_about,
     "contact": page_contact,
     "imprint": lambda L: page_legal(L, "imprint"),
     "privacy": lambda L: page_legal(L, "privacy"),
