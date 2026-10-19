@@ -18,7 +18,6 @@ L = {
         "nav_label": "Hauptnavigation", "lang_label": "Sprache", "legal_label": "Rechtliches",
         "call": "Jetzt anrufen", "write": "E-Mail schreiben",
         "call_short": "Anrufen", "mail_short": "E-Mail",
-        "footer_tagline": "Soziotherapie nach § 37a SGB V in Gelsenkirchen – auf ärztliche Verordnung, getragen von Ihrer Krankenkasse.",
         "foot_practice": "Praxis", "foot_contact": "Kontakt", "foot_address": "Adresse",
         "map_link": "Route planen",
         "phone_label": "Telefon", "mobile_label": "Mobil", "email_label": "E-Mail",
@@ -60,8 +59,8 @@ L = {
         "about_eyebrow": "Über mich",
         "about_h2": "Burak Arkan",
         "about": [
-            "Ich bin Psychologe (M.&nbsp;Sc.) und arbeite als Soziotherapeut in Gelsenkirchen. Mir ist wichtig, dass Sie verstehen, was wir tun und warum – ohne Fachsprache und ohne Druck.",
-            "Gespräche sind auf Deutsch, Türkisch und Englisch möglich.",
+            "Ich bin Psychologe und Soziotherapeut mit langjähriger Berufserfahrung. Seit 2009 arbeite ich in verschiedenen Einrichtungen der psychologischen Beratung, psychosozialen Unterstützung und psychischen Gesundheitsversorgung.",
+            "Gespräche sind auf Deutsch und Türkisch möglich.",
         ],
         "about_link": "Mehr über mich und meine Arbeitsweise",
     },
@@ -188,11 +187,9 @@ L = {
 <h2>Kontakt</h2>
 <p>Mobil: <a href="tel:+491636707918">0163 670 7918</a><br>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>E-Mail: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-<p>Berufsbezeichnung: Soziotherapeut; akademischer Grad: Master of Science (M.&nbsp;Sc.) Psychologie, verliehen in {TODO.format("Staat ergänzen")}.</p>
-<p>Leistungserbringung nach § 37a SGB V auf Grundlage eines Vertrags mit den gesetzlichen Krankenkassen gemäß § 132b SGB V. {TODO.format("Vertragspartner/Landesverband ergänzen")}</p>
+<p>Berufsbezeichnung: Soziotherapeut; akademischer Grad: Master of Science (M.&nbsp;Sc.) Psychologie.</p>
+<p>Leistungserbringung nach § 37a SGB V auf Grundlage eines Vertrags mit den gesetzlichen Krankenkassen gemäß § 132b SGB V.</p>
 <p>Maßgebliche Regelungen: Sozialgesetzbuch Fünftes Buch (SGB V), Soziotherapie-Richtlinie des Gemeinsamen Bundesausschusses (abrufbar unter <a href="https://www.g-ba.de" rel="noopener" target="_blank">g-ba.de</a>).</p>
-<h2>Umsatzsteuer</h2>
-<p>{TODO.format("USt-IdNr. angeben, falls vorhanden – sonst Abschnitt entfernen.")}</p>
 <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
 <p>Burak Arkan, Anschrift wie oben.</p>
 <h2>Verbraucherstreitbeilegung</h2>

@@ -18,7 +18,6 @@ L = {
         "nav_label": "Ana menü", "lang_label": "Dil", "legal_label": "Yasal bilgiler",
         "call": "Hemen arayın", "write": "E-posta gönderin",
         "call_short": "Ara", "mail_short": "E-posta",
-        "footer_tagline": "Gelsenkirchen'de § 37a SGB V kapsamında sosyoterapi – hekim sevkiyle, masrafları sağlık sigortanız karşılar.",
         "foot_practice": "Muayenehane", "foot_contact": "İletişim", "foot_address": "Adres",
         "map_link": "Yol tarifi",
         "phone_label": "Telefon", "mobile_label": "Cep", "email_label": "E-posta",
@@ -26,7 +25,7 @@ L = {
     },
     "pages": {
         "home": {"title": "Gelsenkirchen'de Sosyoterapi · Burak Arkan",
-                 "desc": "Gelsenkirchen'de sosyoterapi. Psikolog (M. Sc.) Burak Arkan, ağır ruhsal hastalığı olan kişilere Türkçe, Almanca ve İngilizce eşlik ediyor – hekim sevkiyle, masrafları sağlık sigortası karşılar."},
+                 "desc": "Gelsenkirchen'de sosyoterapi. Psikolog (M. Sc.) Burak Arkan, ağır ruhsal hastalığı olan kişilere Türkçe ve Almanca eşlik ediyor – hekim sevkiyle, masrafları sağlık sigortası karşılar."},
         "st": {"title": "Sosyoterapi nedir? · Praxis Arkan, Gelsenkirchen",
                "desc": "§ 37a SGB V kapsamında sosyoterapi: kimler için, seanslarda neler yapılır, koşullar nelerdir ve ücreti ne kadardır."},
         "about": {"title": "Hakkımda · Burak Arkan, Gelsenkirchen'de sosyoterapist",
@@ -59,8 +58,8 @@ L = {
         "about_eyebrow": "Hakkımda",
         "about_h2": "Burak Arkan",
         "about": [
-            "Psikoloğum (M.&nbsp;Sc.) ve Gelsenkirchen'de sosyoterapist olarak çalışıyorum. Ne yaptığımızı ve nedenini anlamanız benim için önemli – teknik dil ve baskı olmadan.",
-            "Görüşmeler Türkçe, Almanca ve İngilizce yapılabilir.",
+            "Uzun yıllara dayanan mesleki deneyime sahip bir psikolog ve sosyoterapistim. 2009'dan bu yana psikolojik danışmanlık, psikososyal destek ve ruh sağlığı hizmetleri alanında çeşitli kurumlarda çalışıyorum.",
+            "Görüşmeler Türkçe ve Almanca yapılabilir.",
         ],
         "about_link": "Hakkımda ve çalışma biçimim",
     },
@@ -184,8 +183,8 @@ L = {
 <h2>İletişim</h2>
 <p>Cep: <a href="tel:+491636707918">0163 670 7918</a><br>Telefon: <a href="tel:+4920935976597">0209 359 765 97</a><br>E-posta: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Meslek unvanı</h2>
-<p>Sosyoterapist; akademik derece: Psikoloji Yüksek Lisansı (M.&nbsp;Sc.), {TODO.format("verildiği ülke eklenecek")}.</p>
-<p>§ 132b SGB V uyarınca yasal sağlık sigortalarıyla yapılan sözleşmeye dayalı olarak § 37a SGB V kapsamında hizmet. {TODO.format("Sözleşme tarafı eklenecek")}</p>
+<p>Sosyoterapist; akademik derece: Psikoloji Yüksek Lisansı (M.&nbsp;Sc.).</p>
+<p>§ 132b SGB V uyarınca yasal sağlık sigortalarıyla yapılan sözleşmeye dayalı olarak § 37a SGB V kapsamında hizmet.</p>
 <h2>§ 18 (2) MStV uyarınca içerikten sorumlu</h2>
 <p>Burak Arkan, adres yukarıdaki gibidir.</p>
 <h2>Tüketici uyuşmazlıkları</h2>

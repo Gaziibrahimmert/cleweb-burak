@@ -18,7 +18,6 @@ L = {
         "nav_label": "Main navigation", "lang_label": "Language", "legal_label": "Legal",
         "call": "Call now", "write": "Send an email",
         "call_short": "Call", "mail_short": "Email",
-        "footer_tagline": "Sociotherapy under § 37a SGB V in Gelsenkirchen – on medical referral, covered by your statutory health insurance.",
         "foot_practice": "Practice", "foot_contact": "Contact", "foot_address": "Address",
         "map_link": "Get directions",
         "phone_label": "Phone", "mobile_label": "Mobile", "email_label": "Email",
@@ -26,7 +25,7 @@ L = {
     },
     "pages": {
         "home": {"title": "Sociotherapy in Gelsenkirchen · Burak Arkan",
-                 "desc": "Sociotherapy practice in Gelsenkirchen, Germany. Burak Arkan, M. Sc. psychologist, supports people with severe mental illness in English, German and Turkish – on referral, covered by statutory health insurance."},
+                 "desc": "Sociotherapy practice in Gelsenkirchen, Germany. Burak Arkan, M. Sc. psychologist, supports people with severe mental illness in German and Turkish – on referral, covered by statutory health insurance."},
         "st": {"title": "What is sociotherapy? · Praxis Arkan, Gelsenkirchen",
                "desc": "Sociotherapy under § 37a SGB V: who it is for, what happens in sessions, the requirements and the costs."},
         "about": {"title": "About · Burak Arkan, sociotherapist in Gelsenkirchen",
@@ -59,8 +58,8 @@ L = {
         "about_eyebrow": "About me",
         "about_h2": "Burak Arkan",
         "about": [
-            "I am a psychologist (M.&nbsp;Sc.) working as a sociotherapist in Gelsenkirchen. It matters to me that you understand what we are doing and why – without jargon and without pressure.",
-            "Sessions are available in English, German and Turkish.",
+            "I am a psychologist and sociotherapist with many years of professional experience. Since 2009 I have worked in various settings of psychological counselling, psychosocial support and mental health care.",
+            "Sessions are available in German and Turkish.",
         ],
         "about_link": "More about me and how I work",
     },
@@ -184,8 +183,8 @@ L = {
 <h2>Contact</h2>
 <p>Mobile: <a href="tel:+491636707918">+49 163 670 7918</a><br>Phone: <a href="tel:+4920935976597">+49 209 359 765 97</a><br>Email: <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>Professional title</h2>
-<p>Sociotherapist; academic degree: Master of Science (M.&nbsp;Sc.) in Psychology, awarded in {TODO.format("add country")}.</p>
-<p>Services under § 37a SGB V based on a contract with the statutory health insurers pursuant to § 132b SGB V. {TODO.format("Add contracting party")}</p>
+<p>Sociotherapist; academic degree: Master of Science (M.&nbsp;Sc.) in Psychology.</p>
+<p>Services under § 37a SGB V based on a contract with the statutory health insurers pursuant to § 132b SGB V.</p>
 <h2>Responsible for content pursuant to § 18 (2) MStV</h2>
 <p>Burak Arkan, address as above.</p>
 <h2>Consumer dispute resolution</h2>

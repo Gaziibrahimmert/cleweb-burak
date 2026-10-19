@@ -79,7 +79,7 @@ def head(L, key):
             "addressCountry": "DE",
         },
         "areaServed": "Gelsenkirchen",
-        "availableLanguage": ["de", "tr", "en"],
+        "availableLanguage": ["de", "tr"],
         "employee": {
             "@type": "Person",
             "name": "Burak Arkan",
@@ -155,10 +155,7 @@ def footer(L, key):
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="../assets/img/logo.webp" alt="" width="40" height="44" loading="lazy">
-        <div>
-          <div class="brand-name">Burak Arkan</div>
-          <p>{ui['footer_tagline']}</p>
-        </div>
+        <div class="brand-name">Burak Arkan</div>
       </div>
       <div>
         <p class="foot-h">{ui['foot_practice']}</p>
