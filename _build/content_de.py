@@ -59,7 +59,7 @@ L = {
         "about_eyebrow": "Über mich",
         "about_h2": "Burak Arkan",
         "about": [
-            "Ich bin Psychologe und Soziotherapeut mit langjähriger Berufserfahrung. Seit 2009 arbeite ich in verschiedenen Einrichtungen der psychologischen Beratung, psychosozialen Unterstützung und psychischen Gesundheitsversorgung.",
+            "Ich bin Psychologe und Soziotherapeut. Seit 2009 arbeite ich in verschiedenen Einrichtungen der psychologischen Beratung, psychosozialen Unterstützung und psychischen Gesundheitsversorgung.",
             "Gespräche sind auf Deutsch und Türkisch möglich.",
         ],
         "about_link": "Mehr über mich und meine Arbeitsweise",
@@ -147,7 +147,7 @@ L = {
         "portrait_alt": "Porträt Burak Arkan",
         "intro": [
             "Hallo, mein Name ist Burak Arkan.",
-            "Ich bin Psychologe und Soziotherapeut mit langjähriger Berufserfahrung. Seit 2009 arbeite ich in verschiedenen Einrichtungen der psychologischen Beratung, psychosozialen Unterstützung und psychischen Gesundheitsversorgung.",
+            "Ich bin Psychologe und Soziotherapeut. Seit 2009 arbeite ich in verschiedenen Einrichtungen der psychologischen Beratung, psychosozialen Unterstützung und psychischen Gesundheitsversorgung.",
             "In meiner beruflichen Tätigkeit begleite ich Menschen in unterschiedlichen Lebenssituationen und mit vielfältigen psychischen Belastungen.",
         ],
         "work_eyebrow": "Haltung",
@@ -163,7 +163,7 @@ L = {
         "services": [
             ("Soziotherapie", "Unterstützung für Menschen mit psychischen Erkrankungen bei der Bewältigung des Alltags und der Stärkung ihrer Selbstständigkeit."),
             ("Psychologische Beratung", "Begleitung bei persönlichen Belastungen, Lebenskrisen und herausfordernden Lebenssituationen."),
-            ("Interkulturelle Paartherapie", "Unterstützung für türkischsprachige Paare bei Beziehungskonflikten, Kommunikationsproblemen und kulturell geprägten Herausforderungen."),
+            ("Interkulturelle Paartherapie", "Unterstützung für Paare bei Beziehungskonflikten, Kommunikationsproblemen und kulturell geprägten Herausforderungen."),
         ],
     },
 

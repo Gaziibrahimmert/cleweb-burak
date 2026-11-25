@@ -58,7 +58,7 @@ L = {
         "about_eyebrow": "About me",
         "about_h2": "Burak Arkan",
         "about": [
-            "I am a psychologist and sociotherapist with many years of professional experience. Since 2009 I have worked in various settings of psychological counselling, psychosocial support and mental health care.",
+            "I am a psychologist and sociotherapist. Since 2009 I have worked in various settings of psychological counselling, psychosocial support and mental health care.",
             "Sessions are available in German and Turkish.",
         ],
         "about_link": "More about me and how I work",
@@ -144,7 +144,7 @@ L = {
         "portrait_alt": "Portrait of Burak Arkan",
         "intro": [
             "Hello, my name is Burak Arkan.",
-            "I am a psychologist and sociotherapist with many years of professional experience. Since 2009 I have worked in various settings of psychological counselling, psychosocial support and mental health care.",
+            "I am a psychologist and sociotherapist. Since 2009 I have worked in various settings of psychological counselling, psychosocial support and mental health care.",
             "In my work I accompany people in a wide range of life situations and with many kinds of psychological strain.",
         ],
         "work_eyebrow": "Approach",
@@ -160,7 +160,7 @@ L = {
         "services": [
             ("Sociotherapy", "Support for people with mental illness in coping with everyday life and strengthening their independence."),
             ("Psychological counselling", "Support with personal strain, life crises and challenging situations."),
-            ("Intercultural couples therapy", "Support for Turkish-speaking couples with relationship conflicts, communication problems and culturally shaped challenges."),
+            ("Intercultural couples therapy", "Support for couples with relationship conflicts, communication problems and culturally shaped challenges."),
         ],
     },
 

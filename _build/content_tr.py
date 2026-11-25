@@ -58,7 +58,7 @@ L = {
         "about_eyebrow": "Hakkımda",
         "about_h2": "Burak Arkan",
         "about": [
-            "Uzun yıllara dayanan mesleki deneyime sahip bir psikolog ve sosyoterapistim. 2009'dan bu yana psikolojik danışmanlık, psikososyal destek ve ruh sağlığı hizmetleri alanında çeşitli kurumlarda çalışıyorum.",
+            "Psikolog ve sosyoterapistim. 2009'dan bu yana psikolojik danışmanlık, psikososyal destek ve ruh sağlığı hizmetleri alanında çeşitli kurumlarda çalışıyorum.",
             "Görüşmeler Türkçe ve Almanca yapılabilir.",
         ],
         "about_link": "Hakkımda ve çalışma biçimim",
@@ -144,7 +144,7 @@ L = {
         "portrait_alt": "Burak Arkan portresi",
         "intro": [
             "Merhaba, ben Burak Arkan.",
-            "Uzun yıllara dayanan mesleki deneyime sahip bir psikolog ve sosyoterapistim. 2009'dan bu yana psikolojik danışmanlık, psikososyal destek ve ruh sağlığı hizmetleri alanında çeşitli kurumlarda çalışıyorum.",
+            "Psikolog ve sosyoterapistim. 2009'dan bu yana psikolojik danışmanlık, psikososyal destek ve ruh sağlığı hizmetleri alanında çeşitli kurumlarda çalışıyorum.",
             "Mesleki çalışmalarımda farklı yaşam koşullarındaki ve çeşitli ruhsal yükler taşıyan insanlara eşlik ediyorum.",
         ],
         "work_eyebrow": "Yaklaşım",
@@ -160,7 +160,7 @@ L = {
         "services": [
             ("Sosyoterapi", "Ruhsal hastalığı olan kişilere günlük hayatla baş etmede ve bağımsızlıklarını güçlendirmede destek."),
             ("Psikolojik danışmanlık", "Kişisel yükler, yaşam krizleri ve zorlayıcı yaşam durumlarında eşlik."),
-            ("Kültürlerarası çift terapisi", "Türkçe konuşan çiftlere ilişki çatışmaları, iletişim sorunları ve kültürel kaynaklı zorluklarda destek."),
+            ("Kültürlerarası çift terapisi", "Çiftlere ilişki çatışmaları, iletişim sorunları ve kültürel kaynaklı zorluklarda destek."),
         ],
     },
 
