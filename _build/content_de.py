@@ -175,6 +175,22 @@ L = {
         "phone_hint": "Bei Abwesenheit rufe ich zurück.",
         "hours": "Nach Vereinbarung",
         "room_alt": "Behandlungsraum der Praxis in der Albertstraße",
+        "form": {
+            "eyebrow": "Kontaktformular",
+            "h2": "Schreiben Sie mir eine Nachricht",
+            "text": "Ich melde mich in der Regel innerhalb von zwei Werktagen bei Ihnen.",
+            "name": "Name", "email": "E-Mail", "phone": "Telefon", "optional": "(optional)",
+            "message": "Ihre Nachricht",
+            "consent": 'Ich habe die <a href="{privacy}">Datenschutzhinweise</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.',
+            "submit": "Nachricht senden",
+            "msg": {
+                "sending": "Wird gesendet …",
+                "ok": "Vielen Dank! Ihre Nachricht ist angekommen. Ich melde mich bald bei Ihnen.",
+                "invalid": "Bitte füllen Sie Name, E-Mail und Nachricht aus und bestätigen Sie die Datenschutzhinweise.",
+                "rate": "Es wurden gerade zu viele Nachrichten gesendet. Bitte versuchen Sie es später noch einmal.",
+                "send": "Die Nachricht konnte leider nicht gesendet werden. Bitte rufen Sie mich an: 0163 670 7918.",
+            },
+        },
     },
 
     # ------------------------------------------------------------ legal
@@ -202,7 +218,7 @@ L = {
         "eyebrow": "Rechtliches",
         "h1": "Datenschutz",
         "html": f"""
-<p>Der Schutz Ihrer Daten ist mir – gerade in einem therapeutischen Umfeld – besonders wichtig. Diese Website ist bewusst sparsam gebaut: Sie setzt keine Cookies, verwendet keine Analyse- oder Tracking-Dienste, lädt keine Inhalte von Drittanbietern (Schriften werden lokal ausgeliefert) und enthält kein Kontaktformular.</p>
+<p>Der Schutz Ihrer Daten ist mir – gerade in einem therapeutischen Umfeld – besonders wichtig. Diese Website ist bewusst sparsam gebaut: Sie setzt keine Cookies, verwendet keine Analyse- oder Tracking-Dienste, lädt keine Inhalte von Drittanbietern (Schriften werden lokal ausgeliefert).</p>
 <h2>1. Verantwortlicher</h2>
 <p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen<br>Telefon 0163 670 7918 · E-Mail <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Bereitstellung der Website und Server-Logfiles</h2>
@@ -212,11 +228,14 @@ L = {
 <h2>3. Kontaktaufnahme per Telefon oder E-Mail</h2>
 <p>Wenn Sie mich anrufen oder mir schreiben, verarbeite ich Ihre Angaben, um Ihre Anfrage zu beantworten und gegebenenfalls eine Behandlung vorzubereiten (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO). Soweit Sie Gesundheitsdaten mitteilen, erfolgt die Verarbeitung zum Zweck der Versorgung im Gesundheitsbereich (Art.&nbsp;9 Abs.&nbsp;2 lit.&nbsp;h, Abs.&nbsp;3 DSGVO) unter Wahrung der Schweigepflicht.</p>
 <p>Bitte beachten Sie: Unverschlüsselte E-Mails können auf dem Transportweg von Dritten gelesen werden. Teilen Sie sensible Gesundheitsinformationen daher lieber telefonisch oder persönlich mit.</p>
-<h2>4. Behandlungsdaten</h2>
+<h2>4. Kontaktformular</h2>
+<p>Wenn Sie das Kontaktformular nutzen, werden Ihr Name, Ihre E-Mail-Adresse, Ihre Nachricht und – falls angegeben – Ihre Telefonnummer verschlüsselt (HTTPS) an eine Serverfunktion bei Vercel übertragen und von dort als E-Mail an mein Postfach weitergeleitet. Auf dem Webserver werden die Inhalte nicht dauerhaft gespeichert. Mein Postfach wird bei Google (Gmail) geführt; Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Rechtsgrundlage ist die Bearbeitung Ihrer Anfrage bzw. die Anbahnung einer Behandlung (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO) sowie Ihre Einwilligung (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a, Art.&nbsp;9 Abs.&nbsp;2 lit.&nbsp;a DSGVO), soweit Sie Angaben zu Ihrer Gesundheit machen. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Ich lösche Ihre Anfrage, sobald sie erledigt ist und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+<h2>5. Behandlungsdaten</h2>
 <p>Im Rahmen der Soziotherapie verarbeite ich Daten, die für Behandlung, Dokumentation und Abrechnung mit Ihrer Krankenkasse erforderlich sind. Die Weitergabe erfolgt nur an die verordnende Praxis und die Krankenkasse, soweit gesetzlich vorgesehen oder von Ihnen gewünscht. Die Dokumentation wird nach den gesetzlichen Fristen aufbewahrt.</p>
-<h2>5. Externe Links</h2>
+<h2>6. Externe Links</h2>
 <p>Der Link „Route planen“ führt zu OpenStreetMap. Erst wenn Sie ihn anklicken, werden Daten an die OpenStreetMap Foundation übertragen; es gilt deren Datenschutzerklärung.</p>
-<h2>6. Ihre Rechte</h2>
+<h2>7. Ihre Rechte</h2>
 <p>Sie haben das Recht auf Auskunft (Art.&nbsp;15), Berichtigung (Art.&nbsp;16), Löschung (Art.&nbsp;17), Einschränkung der Verarbeitung (Art.&nbsp;18), Datenübertragbarkeit (Art.&nbsp;20) und Widerspruch (Art.&nbsp;21 DSGVO). Wenden Sie sich dafür einfach an mich.</p>
 <p>Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.</p>
 <p class="small">Stand: Oktober 2026</p>

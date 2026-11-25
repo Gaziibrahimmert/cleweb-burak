@@ -171,6 +171,22 @@ L = {
         "phone_hint": "Ulaşamazsanız sizi geri ararım.",
         "hours": "Randevu ile",
         "room_alt": "Albertstraße'deki muayenehanenin görüşme odası",
+        "form": {
+            "eyebrow": "İletişim formu",
+            "h2": "Bana mesaj yazın",
+            "text": "Genellikle iki iş günü içinde size dönüş yapıyorum.",
+            "name": "Ad soyad", "email": "E-posta", "phone": "Telefon", "optional": "(isteğe bağlı)",
+            "message": "Mesajınız",
+            "consent": '<a href="{privacy}">Gizlilik bildirimini</a> okudum; bilgilerimin talebimin yanıtlanması için kullanılmasını kabul ediyorum.',
+            "submit": "Mesajı gönder",
+            "msg": {
+                "sending": "Gönderiliyor …",
+                "ok": "Teşekkürler! Mesajınız ulaştı. En kısa sürede size dönüş yapacağım.",
+                "invalid": "Lütfen adınızı, e-posta adresinizi ve mesajınızı yazın ve gizlilik bildirimini onaylayın.",
+                "rate": "Kısa sürede çok fazla mesaj gönderildi. Lütfen biraz sonra tekrar deneyin.",
+                "send": "Mesaj maalesef gönderilemedi. Lütfen beni arayın: 0163 670 7918.",
+            },
+        },
     },
 
     "imprint": {
@@ -196,7 +212,7 @@ L = {
         "h1": "Gizlilik",
         "html": f"""
 <p class="note">Bu sayfa bilgilendirme amaçlı bir çeviridir. Hukuken bağlayıcı olan <a href="../de/datenschutz.html">Almanca gizlilik bildirimidir (Datenschutzerklärung)</a>.</p>
-<p>Verilerinizin korunması, özellikle terapötik bir ortamda, benim için çok önemlidir. Bu web sitesi bilinçli olarak sade tutulmuştur: Çerez kullanmaz, analiz veya takip hizmeti içermez, üçüncü taraflardan içerik yüklemez (yazı tipleri yerel olarak sunulur) ve iletişim formu yoktur.</p>
+<p>Verilerinizin korunması, özellikle terapötik bir ortamda, benim için çok önemlidir. Bu web sitesi bilinçli olarak sade tutulmuştur: Çerez kullanmaz, analiz veya takip hizmeti içermez, üçüncü taraflardan içerik yüklemez (yazı tipleri yerel olarak sunulur).</p>
 <h2>1. Sorumlu kişi</h2>
 <p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen · Telefon 0163 670 7918 · E-posta <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Sunucu kayıtları</h2>
@@ -204,7 +220,10 @@ L = {
 <p>Vercel verileri bir veri işleme sözleşmesi (md.&nbsp;28) kapsamında benim adıma işler; veriler ABD'ye aktarılabilir. Vercel, AB-ABD Veri Gizliliği Çerçevesi (Data Privacy Framework) kapsamında sertifikalıdır. Alan adı praxis-arkan.de, IONOS SE'de (Montabaur) kayıtlıdır; IONOS yalnızca alan adı çözümlemesini (DNS) sağlar.</p>
 <h2>3. Telefon veya e-posta ile iletişim</h2>
 <p>Beni aradığınızda veya yazdığınızda, bilgilerinizi talebinizi yanıtlamak ve gerekirse bir tedaviyi hazırlamak için işlerim (md.&nbsp;6/1-b). Sağlık bilgisi paylaştığınızda bu, sağlık hizmeti amacıyla ve sır saklama yükümlülüğüne uygun olarak işlenir (md.&nbsp;9/2-h). Şifrelenmemiş e-postalar üçüncü kişilerce okunabilir; hassas bilgileri lütfen telefonla veya yüz yüze paylaşın.</p>
-<h2>4. Haklarınız</h2>
+<h2>4. İletişim formu</h2>
+<p>İletişim formunu kullandığınızda adınız, e-posta adresiniz, mesajınız ve – belirttiyseniz – telefon numaranız şifreli olarak (HTTPS) Vercel'deki bir sunucu fonksiyonuna iletilir ve oradan e-posta olarak posta kutuma gönderilir. İçerikler web sunucusunda kalıcı olarak saklanmaz. Posta kutum Google'da (Gmail) bulunur; sağlayıcı Google Ireland Limited, Dublin, İrlanda'dır.</p>
+<p>Hukuki dayanak, talebinizin yanıtlanması veya bir tedavinin hazırlanmasıdır (md.&nbsp;6/1-b); sağlığınıza ilişkin bilgi paylaştığınız ölçüde ise onayınızdır (md.&nbsp;6/1-a, md.&nbsp;9/2-a). Onayınızı istediğiniz zaman geri alabilirsiniz. Talebiniz sonuçlandığında ve yasal saklama yükümlülüğü yoksa silinir.</p>
+<h2>5. Haklarınız</h2>
 <p>Bilgi alma, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarına sahipsiniz. Ayrıca bir denetim makamına, örneğin Kuzey Ren-Vestfalya Veri Koruma Görevlisi'ne (LDI NRW, Düsseldorf) şikâyette bulunabilirsiniz.</p>
 <p class="small">Tarih: Ekim 2026</p>
 """,

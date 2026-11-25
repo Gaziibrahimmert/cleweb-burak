@@ -1,0 +1,9 @@
+{
+  "name": "praxis-arkan",
+  "private": true,
+  "description": "Website der Praxis für Soziotherapie Burak Arkan",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

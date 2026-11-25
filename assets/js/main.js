@@ -46,6 +46,53 @@
     });
   });
 
+  // contact form: send via fetch, fall back to a normal post without JS
+  var form = document.querySelector(".contact-form");
+  if (form) {
+    var msg = JSON.parse(form.getAttribute("data-msg") || "{}");
+    var status = form.querySelector(".form-status");
+    var button = form.querySelector("button[type=submit]");
+    var show = function (text, cls) { status.textContent = text; status.className = "form-status " + (cls || ""); };
+
+    // result of a no-JS post comes back in the query string
+    var q = location.search;
+    if (/[?&]gesendet=1/.test(q)) show(msg.ok, "ok");
+    else { var m = q.match(/[?&]fehler=(\w+)/); if (m) show(msg[m[1]] || msg.send, "err"); }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var fields = {
+        name: form.elements.name, email: form.elements.email,
+        message: form.elements.message, consent: form.elements.consent
+      };
+      var bad = [];
+      if (fields.name.value.trim().length < 2) bad.push("name");
+      if (!/^\S+@\S+\.\S{2,}$/.test(fields.email.value.trim())) bad.push("email");
+      if (fields.message.value.trim().length < 5) bad.push("message");
+      if (!fields.consent.checked) bad.push("consent");
+      Object.keys(fields).forEach(function (k) {
+        var el = k === "consent" ? fields[k].closest(".consent") : fields[k];
+        el.classList.toggle("is-invalid", bad.indexOf(k) >= 0);
+        if (k !== "consent") fields[k].setAttribute("aria-invalid", bad.indexOf(k) >= 0 ? "true" : "false");
+      });
+      if (bad.length) { show(msg.invalid, "err"); (bad[0] === "consent" ? fields.consent : fields[bad[0]]).focus(); return; }
+
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      data.consent = true;
+      button.disabled = true;
+      show(msg.sending);
+      fetch(form.action, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().catch(function () { return { ok: false, error: "send" }; }); })
+        .then(function (res) {
+          if (res.ok) { form.reset(); show(msg.ok, "ok"); }
+          else show(msg[res.error] || msg.send, "err");
+        })
+        .catch(function () { show(msg.send, "err"); })
+        .then(function () { button.disabled = false; });
+    });
+  }
+
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();

@@ -384,7 +384,37 @@ def page_contact(L):
     </div>
   </div>
 </section>
-""")
+""" + contact_form(L))
+
+
+def contact_form(L):
+    f = L["contact"]["form"]
+    privacy = href(L, "privacy")
+    msgs = esc_attr(json.dumps(f["msg"], ensure_ascii=False))
+    return f"""<section class="section tint" id="formular">
+  <div class="wrap split">
+    <div class="reveal"><p class="eyebrow">{f['eyebrow']}</p><h2>{f['h2']}</h2><p class="muted">{f['text']}</p></div>
+    <div class="reveal">
+      <form class="contact-form" action="/api/contact" method="post" data-msg="{msgs}" novalidate>
+        <input type="hidden" name="lang" value="{L['code']}">
+        <input type="hidden" name="back" value="/{L['code']}/{L['slugs']['contact']}">
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field-row">
+          <div class="field"><label for="cf-name">{f['name']}</label><input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="100"></div>
+          <div class="field"><label for="cf-email">{f['email']}</label><input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="200"></div>
+        </div>
+        <div class="field"><label for="cf-phone">{f['phone']} <span class="opt">{f['optional']}</span></label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></div>
+        <div class="field"><label for="cf-message">{f['message']}</label><textarea id="cf-message" name="message" rows="6" required maxlength="5000"></textarea></div>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>{f['consent'].format(privacy=privacy)}</span></label>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">{ICON['mail']}<span>{f['submit']}</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+"""
 
 
 def page_legal(L, key):

@@ -314,6 +314,28 @@ strong { font-weight: 600; }
 .cta-end h2 { margin: 0; max-width: 18ch; }
 .cta-end .phone-big { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.4rem); text-decoration: none; display: block; margin-bottom: 18px; font-weight: 380; }
 
+/* contact form */
+.contact-form { display: grid; gap: 26px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.field label { display: block; font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--ink-3); margin-bottom: 8px; }
+.field .opt { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.field input, .field textarea {
+  width: 100%; font: 400 1.05rem/1.5 var(--sans); color: var(--ink);
+  background: var(--white); border: 1px solid var(--line); border-radius: 2px;
+  padding: 13px 14px; transition: border-color .2s, box-shadow .2s;
+}
+.field textarea { resize: vertical; min-height: 150px; }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px rgba(108, 110, 152, .15); }
+.field .is-invalid, .consent.is-invalid { border-color: #a3485a; }
+.consent { display: grid; grid-template-columns: 20px 1fr; gap: 12px; align-items: start; font-size: .95rem; color: var(--ink-2); cursor: pointer; border: 1px solid transparent; padding: 2px; }
+.consent input { width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--plum); }
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.form-foot .btn[disabled] { opacity: .6; cursor: progress; }
+.form-status { margin: 0; font-size: .98rem; color: var(--ink-2); max-width: 46ch; }
+.form-status.ok { color: #3d6b4f; }
+.form-status.err { color: #a3485a; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
 /* legal pages */
 .prose { max-width: 760px; }
 .prose h2 { font-size: clamp(1.5rem, 2.2vw, 1.85rem); margin-top: 2.2em; }
@@ -412,6 +434,7 @@ strong { font-weight: 600; }
   .numbers { grid-template-columns: 1fr; }
   .numbers > div, .numbers > div + div { border-left: 0; padding-left: 0; border-bottom: 1px solid var(--line-dark); padding-top: 24px; }
   .contact-list li { grid-template-columns: 1fr; gap: 4px; }
+  .field-row { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr; }
   .faq .answer { padding-right: 0; }
   .btn { width: 100%; justify-content: center; }

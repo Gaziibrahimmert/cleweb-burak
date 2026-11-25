@@ -171,6 +171,22 @@ L = {
         "phone_hint": "From abroad: +49 163 670 7918. I'll call back if I miss you.",
         "hours": "By appointment",
         "room_alt": "Consulting room of the practice on Albertstraße",
+        "form": {
+            "eyebrow": "Contact form",
+            "h2": "Send me a message",
+            "text": "I usually get back to you within two working days.",
+            "name": "Name", "email": "Email", "phone": "Phone", "optional": "(optional)",
+            "message": "Your message",
+            "consent": 'I have read the <a href="{privacy}">privacy notice</a> and agree that my details will be used to handle my enquiry.',
+            "submit": "Send message",
+            "msg": {
+                "sending": "Sending …",
+                "ok": "Thank you! Your message has arrived. I will get back to you soon.",
+                "invalid": "Please enter your name, email and message and confirm the privacy notice.",
+                "rate": "Too many messages were sent just now. Please try again later.",
+                "send": "Sorry, the message could not be sent. Please call me: +49 163 670 7918.",
+            },
+        },
     },
 
     "imprint": {
@@ -196,7 +212,7 @@ L = {
         "h1": "Privacy",
         "html": f"""
 <p class="note">This page is a courtesy translation. The legally binding version is the <a href="../de/datenschutz.html">German Datenschutzerklärung</a>.</p>
-<p>Protecting your data matters to me – especially in a therapeutic setting. This website is deliberately minimal: it sets no cookies, uses no analytics or tracking, loads no third-party content (fonts are served locally) and has no contact form.</p>
+<p>Protecting your data matters to me – especially in a therapeutic setting. This website is deliberately minimal: it sets no cookies, uses no analytics or tracking, loads no third-party content (fonts are served locally).</p>
 <h2>1. Controller</h2>
 <p>Burak Arkan, Praxis für Soziotherapie, Albertstraße 54, 45894 Gelsenkirchen, Germany · Phone +49 163 670 7918 · Email <a href="mailto:arkanburak@gmail.com">arkanburak@gmail.com</a></p>
 <h2>2. Server log files</h2>
@@ -204,7 +220,10 @@ L = {
 <p>Vercel processes this data on my behalf under a data processing agreement (Art.&nbsp;28 GDPR); data may be transferred to the USA. Vercel is certified under the EU-U.S. Data Privacy Framework, so the transfer is based on the European Commission's adequacy decision (Art.&nbsp;45 GDPR). The domain praxis-arkan.de is registered with IONOS SE, Montabaur, Germany, which only provides name resolution (DNS).</p>
 <h2>3. Contact by phone or email</h2>
 <p>When you call or write to me, I process your details to answer your enquiry and, if applicable, prepare treatment (Art.&nbsp;6(1)(b) GDPR). Where you share health information, it is processed for the purpose of health care and under professional confidentiality (Art.&nbsp;9(2)(h) GDPR). Unencrypted email can be read by third parties in transit, so please share sensitive information by phone or in person.</p>
-<h2>4. Your rights</h2>
+<h2>4. Contact form</h2>
+<p>If you use the contact form, your name, email address, message and – if provided – phone number are transmitted encrypted (HTTPS) to a server function at Vercel and forwarded from there as an email to my mailbox. The content is not stored permanently on the web server. My mailbox is hosted by Google (Gmail); the provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.</p>
+<p>The legal basis is handling your enquiry or preparing treatment (Art.&nbsp;6(1)(b) GDPR) and, where you share health information, your consent (Art.&nbsp;6(1)(a), Art.&nbsp;9(2)(a) GDPR). You can withdraw your consent at any time with effect for the future. I delete your enquiry once it has been dealt with and no statutory retention obligations apply.</p>
+<h2>5. Your rights</h2>
 <p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection. You can also lodge a complaint with a supervisory authority, e.g. the State Commissioner for Data Protection of North Rhine-Westphalia (LDI NRW, Düsseldorf).</p>
 <p class="small">Last updated: October 2026</p>
 """,
