@@ -302,7 +302,7 @@ def page_home(L):
 <section class="section tint">
   <div class="wrap split-even">
     <figure class="figure reveal">
-      <img src="../assets/img/portrait.webp" alt="{t['portrait_alt']}" width="800" height="1000" loading="lazy">
+      <img src="../assets/img/portrait.webp?v=2" alt="{t['portrait_alt']}" width="800" height="1000" loading="lazy">
     </figure>
     <div class="reveal">
       <p class="eyebrow">{t['about_eyebrow']}</p>
@@ -345,7 +345,7 @@ def page_about(L):
   {motif()}
   <div class="wrap split-even" style="align-items:start">
     <figure class="figure reveal">
-      <img src="../assets/img/portrait.webp" alt="{t['portrait_alt']}" width="800" height="1000">
+      <img src="../assets/img/portrait.webp?v=2" alt="{t['portrait_alt']}" width="800" height="1000">
     </figure>
     <div class="reveal">
       <p class="eyebrow">{t['eyebrow']}</p>

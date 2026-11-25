@@ -112,12 +112,21 @@ module.exports = async function handler(req, res) {
   const { data, errors } = validate(body);
   if (errors.length) return reply(422, { ok: false, error: "invalid", fields: errors });
 
+  if (process.env.MAIL_TRANSPORT !== "json") {
+    const missing = ["SMTP_HOST", "SMTP_USER", "SMTP_PASS"].filter((k) => !process.env[k]);
+    if (missing.length) {
+      console.error("contact mail not configured, missing env:", missing.join(", "));
+      return reply(503, { ok: false, error: "send" });
+    }
+  }
+
   try {
     const info = await transport().sendMail(buildMail(data));
     if (process.env.MAIL_TRANSPORT === "json") console.log(info.message);
     return reply(200, { ok: true });
   } catch (err) {
-    console.error("contact mail failed:", err && err.message);
+    // e.g. EAUTH 535 = wrong user/app password, ESOCKET/ETIMEDOUT = wrong host/port
+    console.error("contact mail failed:", err && err.code, err && err.responseCode, err && err.message);
     return reply(502, { ok: false, error: "send" });
   }
 };
