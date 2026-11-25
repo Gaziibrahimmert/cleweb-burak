@@ -188,7 +188,7 @@ L = {
             "msg": {
                 "sending": "Wird gesendet …",
                 "ok": "Vielen Dank! Ihre Nachricht ist angekommen. Ich melde mich bald bei Ihnen.",
-                "invalid": "Bitte füllen Sie Name, E-Mail und Nachricht aus und bestätigen Sie die Datenschutzhinweise.",
+                "invalid": "Bitte prüfen Sie die rot markierten Felder.",
                 "rate": "Es wurden gerade zu viele Nachrichten gesendet. Bitte versuchen Sie es später noch einmal.",
                 "send": "Die Nachricht konnte leider nicht gesendet werden. Bitte rufen Sie mich an: 0163 670 7918.",
             },

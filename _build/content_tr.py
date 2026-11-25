@@ -184,7 +184,7 @@ L = {
             "msg": {
                 "sending": "Gönderiliyor …",
                 "ok": "Teşekkürler! Mesajınız ulaştı. En kısa sürede size dönüş yapacağım.",
-                "invalid": "Lütfen adınızı, e-posta adresinizi ve mesajınızı yazın ve gizlilik bildirimini onaylayın.",
+                "invalid": "Lütfen kırmızıyla işaretlenen alanları kontrol edin.",
                 "rate": "Kısa sürede çok fazla mesaj gönderildi. Lütfen biraz sonra tekrar deneyin.",
                 "send": "Mesaj maalesef gönderilemedi. Lütfen beni arayın: 0163 670 7918.",
             },

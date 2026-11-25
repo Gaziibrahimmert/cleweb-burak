@@ -326,7 +326,8 @@ strong { font-weight: 600; }
 }
 .field textarea { resize: vertical; min-height: 150px; }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px rgba(108, 110, 152, .15); }
-.field .is-invalid, .consent.is-invalid { border-color: #a3485a; }
+.field .is-invalid { border-color: #a3485a; box-shadow: 0 0 0 1px #a3485a; background: #fdf6f7; }
+.consent.is-invalid { border-color: #a3485a; color: #a3485a; }
 .consent { display: grid; grid-template-columns: 20px 1fr; gap: 12px; align-items: start; font-size: .95rem; color: var(--ink-2); cursor: pointer; border: 1px solid transparent; padding: 2px; }
 .consent input { width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--plum); }
 .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }

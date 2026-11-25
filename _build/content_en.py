@@ -184,7 +184,7 @@ L = {
             "msg": {
                 "sending": "Sending …",
                 "ok": "Thank you! Your message has arrived. I will get back to you soon.",
-                "invalid": "Please enter your name, email and message and confirm the privacy notice.",
+                "invalid": "Please check the fields marked in red.",
                 "rate": "Too many messages were sent just now. Please try again later.",
                 "send": "Sorry, the message could not be sent. Please call me: +49 163 670 7918.",
             },

@@ -43,7 +43,7 @@ function validate(body) {
   const errors = [];
   if (data.name.length < 2) errors.push("name");
   if (!EMAIL_RE.test(data.email)) errors.push("email");
-  if (data.message.length < 5) errors.push("message");
+  if (data.message.length < 2) errors.push("message");
   if (!data.consent) errors.push("consent");
   return { data, errors };
 }

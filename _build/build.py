@@ -3,6 +3,7 @@
 The published site is plain HTML in /de, /tr, /en. Texts live in content_*.py;
 this file only holds the layout. Run:  python _build/build.py
 """
+import hashlib
 import json
 import os
 import sys
@@ -16,6 +17,16 @@ import content_de, content_tr, content_en  # noqa: E402
 LANGS = [content_de.L, content_tr.L, content_en.L]
 BASE = "https://praxis-arkan.de"
 PAGE_KEYS = ["home", "st", "about", "contact", "imprint", "privacy"]
+
+
+def asset_version(rel):
+    """Short content hash, appended as ?v= so browsers pick up changed CSS/JS at once."""
+    with open(os.path.join(ROOT, rel), "rb") as f:
+        return hashlib.sha1(f.read()).hexdigest()[:8]
+
+
+CSS_V = asset_version("assets/css/style.css")
+JS_V = asset_version("assets/js/main.js")
 
 PRACTICE = {
     "name": "Burak Arkan",
@@ -109,7 +120,7 @@ def head(L, key):
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
   <link rel="preload" href="../assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v={CSS_V}">
   <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
@@ -185,7 +196,7 @@ def footer(L, key):
   <a href="tel:{PRACTICE['phone_href']}">{ICON['phone']}{ui['call_short']}</a>
   <a href="mailto:{PRACTICE['email']}">{ICON['mail']}{ui['mail_short']}</a>
 </div>
-<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/main.js?v={JS_V}" defer></script>
 </body>
 </html>
 """

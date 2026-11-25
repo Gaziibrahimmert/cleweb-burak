@@ -68,7 +68,7 @@
       var bad = [];
       if (fields.name.value.trim().length < 2) bad.push("name");
       if (!/^\S+@\S+\.\S{2,}$/.test(fields.email.value.trim())) bad.push("email");
-      if (fields.message.value.trim().length < 5) bad.push("message");
+      if (fields.message.value.trim().length < 2) bad.push("message");
       if (!fields.consent.checked) bad.push("consent");
       Object.keys(fields).forEach(function (k) {
         var el = k === "consent" ? fields[k].closest(".consent") : fields[k];
