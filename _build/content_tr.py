@@ -169,6 +169,8 @@ L = {
         "h1": "Bana ulaşın – <em>emin olmasanız bile.</em>",
         "lead": "İster kendiniz, ister bir yakınınız için, ister bir muayenehaneden arayın: Sorularınıza zaman ayırırım.",
         "phone_hint": "Ulaşamazsanız sizi geri ararım.",
+        "secretary": "Sekreterlik – Walter Hanım",
+        "secretary_hours": "Pazartesi ve Perşembe: 09:00–12:00",
         "hours": "Randevu ile",
         "room_alt": "Albertstraße'deki muayenehanenin görüşme odası",
         "form": {

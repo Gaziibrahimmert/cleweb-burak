@@ -173,6 +173,8 @@ L = {
         "h1": "Melden Sie sich – <em>auch wenn Sie unsicher sind.</em>",
         "lead": "Ob Sie selbst betroffen sind, Angehörige:r oder aus einer Praxis anrufen: Ich nehme mir Zeit für Ihre Fragen.",
         "phone_hint": "Bei Abwesenheit rufe ich zurück.",
+        "secretary": "Sekretariat – Frau Walter",
+        "secretary_hours": "Montag und Donnerstag: 09:00–12:00 Uhr",
         "hours": "Nach Vereinbarung",
         "room_alt": "Behandlungsraum der Praxis in der Albertstraße",
         "form": {

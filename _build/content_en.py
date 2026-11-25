@@ -169,6 +169,8 @@ L = {
         "h1": "Get in touch – <em>even if you're unsure.</em>",
         "lead": "Whether you are affected yourself, a relative or calling from a practice: I take time for your questions.",
         "phone_hint": "From abroad: +49 163 670 7918. I'll call back if I miss you.",
+        "secretary": "Secretary – Ms Walter",
+        "secretary_hours": "Monday and Thursday: 9:00 am–12:00 noon",
         "hours": "By appointment",
         "room_alt": "Consulting room of the practice on Albertstraße",
         "form": {

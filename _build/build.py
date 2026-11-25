@@ -371,7 +371,7 @@ def page_contact(L):
     <div class="reveal">
       <ul class="contact-list">
         <li><span class="k">{ui['mobile_label']}</span><span class="v"><a href="tel:{P['phone_href']}">{P['phone']}</a><small>{t['phone_hint']}</small></span></li>
-        <li><span class="k">{ui['phone_label']}</span><span class="v"><a href="tel:{P['landline_href']}">{P['landline']}</a></span></li>
+        <li><span class="k">{ui['phone_label']}</span><span class="v"><a href="tel:{P['landline_href']}">{P['landline']}</a><small>{t['secretary']}<br>{t['secretary_hours']}</small></span></li>
         <li><span class="k">{ui['email_label']}</span><span class="v"><a href="mailto:{P['email']}">{P['email']}</a></span></li>
         <li><span class="k">{ui['address_label']}</span><span class="v">{P['street']}<br>{P['zip']} {P['city']}<small><a href="{P['maps']}" target="_blank" rel="noopener">{ui['map_link']} ↗</a></small></span></li>
         <li><span class="k">{ui['hours_label']}</span><span class="v">{t['hours']}</span></li>
@@ -379,7 +379,7 @@ def page_contact(L):
     </div>
     <div class="reveal">
       <figure class="figure wide" style="margin:0">
-        <img src="../assets/img/praxis.webp" alt="{t['room_alt']}" width="1200" height="800" loading="lazy">
+        <img src="../assets/img/praxis.webp?v=2" alt="{t['room_alt']}" width="1200" height="800" loading="lazy">
       </figure>
     </div>
   </div>
