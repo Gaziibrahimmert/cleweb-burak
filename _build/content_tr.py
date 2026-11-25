@@ -38,7 +38,7 @@ L = {
 
     "home": {
         "eyebrow": "Sosyoterapi Muayenehanesi · Gelsenkirchen",
-        "h1": "Yeniden ayağınızı basacak bir zemin – <em>adım adım.</em>",
+        "h1": "Daha fazla denge ve <em>bağımsızlık</em> için destek",
         "lead": "Ağır bir ruhsal hastalıkla yaşayan kişilere; tedavilerini, günlük yaşamlarını ve ilişkilerini yeniden kendi ellerine almaları için eşlik ediyorum.",
         "more": "Sosyoterapi nedir?",
         "facts_label": "Kısaca",
@@ -48,10 +48,10 @@ L = {
             ("Muayenehanede ve yerinde", "Albertstraße 54, Gelsenkirchen – ve günlük hayatınızın geçtiği yerlerde."),
         ],
         "intro_eyebrow": "Mesele ne?",
-        "statement": "Bir hastalık o kadar çok güç tükettiğinde ki randevular kaçar, mektuplar açılmadan kalır ve bir sonraki hastane yatışı yaklaşır – işte o zaman <em>yanınızda yürüyen birine</em> ihtiyaç vardır.",
+        "statement": "Ruhsal hastalıklar günlük hayatla baş etmeyi, randevulara gitmeyi, resmi işleri halletmeyi ve tıbbi tedaviyi düzenli sürdürmeyi zorlaştırabilir.",
         "intro": [
-            "Sosyoterapi, hekim tedavisi ile kişinin kendi hayatı arasındaki boşluğu kapatır. Şu an sizi en çok neyin zorladığını birlikte netleştirir ve bunu küçük, yönetilebilir adımlarla ele alırız – doktor randevusunda, resmi dairede, evde.",
-            "Amaç işlerinizi sizin yerinize yapmak değil; onları yeniden kendiniz yapabilmeniz.",
+            "Sosyoterapi, tıbbi tedaviyi günlük yaşamla birleştirir. Sizi neyin zorladığını birlikte netleştirir, size özel çözümler geliştirir ve bunları adım adım hayata geçiririz.",
+            "Amaç, kendi kaynaklarınızı güçlendirmek ve mümkün olduğunca bağımsız ve kendi kararlarınızla yaşamanızı sağlamaktır.",
         ],
         "intro_link": "Sosyoterapi hakkında daha fazlası",
         "portrait_alt": "Burak Arkan portresi",
@@ -170,7 +170,7 @@ L = {
         "lead": "İster kendiniz, ister bir yakınınız için, ister bir muayenehaneden arayın: Sorularınıza zaman ayırırım.",
         "phone_hint": "Ulaşamazsanız sizi geri ararım.",
         "secretary": "Sekreterlik – Walter Hanım",
-        "secretary_hours": "Pazartesi ve Perşembe: 09:00–12:00",
+        "secretary_hours": "Pazartesi–Perşembe: 09:00–12:00",
         "hours": "Randevu ile",
         "room_alt": "Albertstraße'deki muayenehanenin görüşme odası",
         "form": {

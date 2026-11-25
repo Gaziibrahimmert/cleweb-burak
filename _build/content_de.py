@@ -39,7 +39,7 @@ L = {
     # ------------------------------------------------------------ home
     "home": {
         "eyebrow": "Praxis für Soziotherapie · Gelsenkirchen",
-        "h1": "Wieder Boden unter den Füßen – <em>Schritt für Schritt.</em>",
+        "h1": "Unterstützung für mehr Stabilität und <em>Selbstständigkeit</em>",
         "lead": "Ich begleite Menschen mit schweren psychischen Erkrankungen dabei, Behandlung, Alltag und Kontakte wieder selbst in die Hand zu nehmen.",
         "more": "Was ist Soziotherapie?",
         "facts_label": "Auf einen Blick",
@@ -49,10 +49,10 @@ L = {
             ("In der Praxis und vor Ort", "Albertstraße 54, Gelsenkirchen – und dort, wo Ihr Alltag stattfindet."),
         ],
         "intro_eyebrow": "Worum es geht",
-        "statement": "Wenn eine Erkrankung so viel Kraft kostet, dass Termine liegen bleiben, Briefe ungeöffnet sind und der nächste Klinikaufenthalt näher rückt, braucht es <em>jemanden, der mitgeht.</em>",
+        "statement": "Psychische Erkrankungen können es erschweren, den Alltag zu bewältigen, Termine wahrzunehmen, behördliche Angelegenheiten zu regeln und die medizinische Behandlung regelmäßig fortzuführen.",
         "intro": [
-            "Soziotherapie schließt die Lücke zwischen ärztlicher Behandlung und dem eigenen Leben. Wir klären gemeinsam, was gerade am meisten drückt, und gehen es in überschaubaren Schritten an – beim Arzttermin, beim Amt, zu Hause.",
-            "Das Ziel ist nicht, Ihnen etwas abzunehmen, sondern dass Sie es wieder selbst können.",
+            "Soziotherapie verbindet die medizinische Behandlung mit dem täglichen Leben. Gemeinsam klären wir, was Sie belastet, entwickeln individuelle Lösungen und setzen diese Schritt für Schritt um.",
+            "Ziel ist es, Ihre eigenen Ressourcen zu stärken und Ihnen ein möglichst selbstständiges und selbstbestimmtes Leben zu ermöglichen.",
         ],
         "intro_link": "Mehr über Soziotherapie",
         "portrait_alt": "Porträt Burak Arkan",
@@ -174,7 +174,7 @@ L = {
         "lead": "Ob Sie selbst betroffen sind, Angehörige:r oder aus einer Praxis anrufen: Ich nehme mir Zeit für Ihre Fragen.",
         "phone_hint": "Bei Abwesenheit rufe ich zurück.",
         "secretary": "Sekretariat – Frau Walter",
-        "secretary_hours": "Montag und Donnerstag: 09:00–12:00 Uhr",
+        "secretary_hours": "Montag bis Donnerstag: 09:00–12:00 Uhr",
         "hours": "Nach Vereinbarung",
         "room_alt": "Behandlungsraum der Praxis in der Albertstraße",
         "form": {

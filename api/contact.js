@@ -116,7 +116,7 @@ module.exports = async function handler(req, res) {
     const missing = ["SMTP_HOST", "SMTP_USER", "SMTP_PASS"].filter((k) => !process.env[k]);
     if (missing.length) {
       console.error("contact mail not configured, missing env:", missing.join(", "));
-      return reply(503, { ok: false, error: "send" });
+      return reply(503, { ok: false, error: "send", reason: "config" });
     }
   }
 
@@ -127,6 +127,8 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     // e.g. EAUTH 535 = wrong user/app password, ESOCKET/ETIMEDOUT = wrong host/port
     console.error("contact mail failed:", err && err.code, err && err.responseCode, err && err.message);
-    return reply(502, { ok: false, error: "send" });
+    // reason is a coarse hint for troubleshooting; it never contains credentials
+    const reason = err && err.code === "EAUTH" ? "auth" : err && /^E(SOCKET|TIMEDOUT|CONNECTION|DNS)/.test(err.code || "") ? "network" : "smtp";
+    return reply(502, { ok: false, error: "send", reason });
   }
 };

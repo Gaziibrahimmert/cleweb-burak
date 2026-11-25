@@ -38,7 +38,7 @@ L = {
 
     "home": {
         "eyebrow": "Practice for Sociotherapy · Gelsenkirchen",
-        "h1": "Finding your footing again – <em>one step at a time.</em>",
+        "h1": "Support for more stability and <em>independence</em>",
         "lead": "I support people living with severe mental illness in taking their treatment, their daily life and their relationships back into their own hands.",
         "more": "What is sociotherapy?",
         "facts_label": "At a glance",
@@ -48,10 +48,10 @@ L = {
             ("At the practice and on site", "Albertstraße 54, Gelsenkirchen – and wherever your everyday life happens."),
         ],
         "intro_eyebrow": "What it is about",
-        "statement": "When an illness drains so much energy that appointments slip, letters stay unopened and the next hospital stay draws closer, you need <em>someone who walks alongside you.</em>",
+        "statement": "Mental illness can make it harder to cope with everyday life, keep appointments, deal with official matters and continue medical treatment regularly.",
         "intro": [
-            "Sociotherapy bridges the gap between medical treatment and your own life. Together we work out what weighs on you most right now and tackle it in manageable steps – at the doctor's, at the authorities, at home.",
-            "The aim is not to do things for you, but for you to be able to do them yourself again.",
+            "Sociotherapy connects medical treatment with daily life. Together we clarify what is weighing on you, develop individual solutions and put them into practice step by step.",
+            "The aim is to strengthen your own resources and enable you to live as independently and self-determinedly as possible.",
         ],
         "intro_link": "More about sociotherapy",
         "portrait_alt": "Portrait of Burak Arkan",
@@ -170,7 +170,7 @@ L = {
         "lead": "Whether you are affected yourself, a relative or calling from a practice: I take time for your questions.",
         "phone_hint": "From abroad: +49 163 670 7918. I'll call back if I miss you.",
         "secretary": "Secretary – Ms Walter",
-        "secretary_hours": "Monday and Thursday: 9:00 am–12:00 noon",
+        "secretary_hours": "Monday to Thursday: 9:00 am–12:00 noon",
         "hours": "By appointment",
         "room_alt": "Consulting room of the practice on Albertstraße",
         "form": {
